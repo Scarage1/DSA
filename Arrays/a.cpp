@@ -31,7 +31,7 @@ int main() {
 	if (!result.empty()) {
 		cout << "Indices: " << result[0] << " " << result[1] << endl;
 	} else {
-		cout << "No solution found." << endl;
+		cout << "No solution found. try again" << endl;
 	}
 	return 0;
 }
