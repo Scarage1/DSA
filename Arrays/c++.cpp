@@ -1,9 +1,20 @@
 #include<iostream>
 using namespace std;
  int main(){
-    int x;
+    long long n=121, digit, reverse=0;
     cout<< " Shivam"<<endl<<" hey"<<endl;
-    cin>>x;
-    cout<<x;
+   while(n>0){
+      digit=n%10;
+      reverse=reverse*10+digit;
+      n=n/10;
+   }
+    
+    if (reverse==121){
+        cout<<"palindrome";
+    }
+    else{
+        cout<<"not palindrome";
+    }
+    
     return 0;
  }
